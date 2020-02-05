@@ -2,12 +2,41 @@
 <html lang="">
 
 <head>
+
+<!-- Facebook сф6 Pixel Code -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    if (Cookies.get('pixel') !== undefined) {
+        fbq('init', Cookies.get('pixel'));
+        fbq('track', 'Lead');
+    }
+</script>
+<!-- End Facebook Pixel Code -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<title>Ваш заказ принят</title>
 	<link rel="stylesheet" href="default-css/subscribe.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
+
 
 <body data-invalid-email-text="Неверный email!">
 	<header>

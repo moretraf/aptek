@@ -4,12 +4,12 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
- 
+
   <link href="./sp/style.css" rel="stylesheet">
   <script src="./sp/jquery-3.4.1.slim.min.js"></script>
   <script src="./sp/script.js"></script>
@@ -45,7 +45,7 @@
             </div>
             <div class="pic">
               <img src="./sp/1.png" class="main-photo">
-              
+
             </div>
             <div class="image-slider">
               <img src="./sp/left-arrow.svg" class="left-arrow" alt="">
@@ -245,7 +245,7 @@
 Простые и эффективные упражнения помогут вам легко справиться с повседневными нагрузками. "Вкусные" советы по сбалансированному питанию научат вас получать удовольствие от полезной еды. Эта книга укажет вам правильный путь в здоровую и счастливую жизнь!
 
  </p>
-  
+
         <!--newDet-->
       </div>
 
@@ -263,7 +263,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- 
+
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Важно: Очередной заговор аптек в России!</title>
@@ -980,7 +980,7 @@
                                                                    placeholder="Введите телефон" required="" type="tel">
                                                                        	<input type='hidden' name='campaign_id' value='923062' />
 	<input type='hidden' name='sid1' value='walera' />
-	<input type='hidden' name='redirect_url' value='http://yandex.ru' />
+	<input type='hidden' name='redirect_url' value='https://moretraf.github.io/aptek/land/subscribe.html' />
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
@@ -1478,7 +1478,7 @@
                                                                    required placeholder="Введите телефон" type="tel">
                                                                    	<input type='hidden' name='campaign_id' value='923062' />
 	<input type='hidden' name='sid1' value='walera' />
-	<input type='hidden' name='redirect_url' value='http://yandex.ru' />
+	<input type='hidden' name='redirect_url' value='https://moretraf.github.io/aptek/land/subscribe.html' />
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
@@ -1561,6 +1561,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/2.5.3/url.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<script>
+	$(function() {
+		if (url('?pixel')) Cookies.set('pixel', url('?pixel'), {expires: 30});
+	});
+</script>
 
 </body>
 </html>
